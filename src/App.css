@@ -1,0 +1,90 @@
+.form-container{
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: #f0f0f0; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  color: gray;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.glowing-text-online {
+  font-size: 18px;
+  font-weight: bold;
+  color: #57c353; 
+  text-align: center;
+  text-shadow: 0 0 10px #00ff00; 
+  animation: glowing 2s infinite; 
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 10px #00ff00; 
+  }
+  50% {
+    text-shadow: 0 0 20px #67bc67; 
+  }
+  100% {
+    text-shadow: 0 0 10px #00ff00; 
+  }
+}
+
+.glowing-text-offline {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff3c00; 
+  text-align: center;
+  text-shadow: 0 0 10px #986348; 
+  animation: glow 2s infinite; 
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #ee1919; 
+  }
+  50% {
+    text-shadow: 0 0 20px #a53b26; 
+  }
+  100% {
+    text-shadow: 0 0 10px #ee1919; 
+   }
+}
+
+button{
+  width: 50%;
+  padding: 0.5rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.btn-online{
+  background-color: #236c2d;
+}
+
+.btn-offline{
+  background-color: #7b3535;
+}
+
+
+.success-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d0e9f3;
+  color: #00ff00;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
